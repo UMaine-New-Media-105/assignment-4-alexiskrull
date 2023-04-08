@@ -1,9 +1,14 @@
-let offsetX = 140;
-let offsetY = 100;
+let numRows = 5;
+let numCols = 5;
+
+let offsetX;
+let offsetY;
 
 function setup() {
   createCanvas(700, 500);
   noLoop();
+  offsetX = width/numCols;
+  offsetY = height/numRows;
   angleMode(DEGREES);
   firework1 = {
     x:30,
@@ -53,3 +58,4 @@ function drawFirework(firework){
   }
   pop();
 }
+
